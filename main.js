@@ -193,21 +193,21 @@ document.addEventListener('DOMContentLoaded', () => {
         address: '25 de Mayo 201',
         schedule: 'Horarios de atención: 9.00 a 17.00',
         image: './assets/location_image_1.jpg',
-        link: 'https://goo.gl/maps/abc123'
+        link: 'https://maps.app.goo.gl/cyQJdweyusQNmVu8A'
       },
       cordoba: {
         title: 'Centro Córdoba Capital',
         address: 'Bv. Illia 356',
         schedule: 'Horarios de atención: 8.30 a 16.30',
-        image: './assets/location_image_1.jpg',
-        link: 'https://goo.gl/maps/def456'
+        image: './assets/location_image_3.jpg',
+        link: 'https://maps.app.goo.gl/4uYX6LZwizgo23jh8'
       },
       'buenos-aires': {
         title: 'Sucursal Buenos Aires',
         address: 'Av. Santa Fe 1234',
         schedule: 'Horarios de atención: 9.30 a 18.00',
-        image: './assets/image_1.webp',
-        link: 'https://goo.gl/maps/ghi789'
+        image: './assets/location_image_2.jpg',
+        link: 'https://maps.app.goo.gl/zWaAobXbiu7rqHu88'
       }
     };
 
