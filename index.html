@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SanCor Salud - Descuentología</title>
+    <meta name="description" content="Aprovechá hasta un 40% off por 1 año en tu plan de salud. Contratá online con asesoramiento personalizado." />
+
+    <meta property="og:title" content="SanCor Salud - Descuentología" />
+    <meta property="og:description" content="Landing de beneficios con hasta 40% off y bonificaciones." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="/assets/image_1.webp" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: "#314080",
+          secondary: "#C70036",
+          tertiary: "#53EAFD",
+          background: "#F8FAFC",
+        },
+        fontFamily: {
+          sans: [
+            'ui-sans-serif',
+            'system-ui',
+            '-apple-system',
+            'Segoe UI',
+            'Roboto',
+            'sans-serif'
+          ]
+        },
+        boxShadow: {
+          card: '0 20px 50px -24px rgb(15 23 42 / 0.35)'
+        }
+      }
+    }
+  };
+</script>
+
+  </head>
+  
+  <body class="bg-[#f3f6ff] text-zinc-900 antialiased selection:bg-blue-200 selection:text-zinc-900">
+    <a href="#contacto" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-rose-600 text-white px-4 py-2 rounded-lg">Saltar al formulario</a>
+ 
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-blue-100">
+      <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex items-center justify-between" aria-label="Principal">
+        <a href="#top" class="flex items-center gap-3">
+          <img src="./assets/logo.svg" alt="SanCor Salud" class="h-10 w-auto" />
+          <span class="sr-only">SanCor Salud Home</span>
+        </a>
+        <div class="hidden md:flex items-center gap-7 text-sm font-medium text-primary">
+          <a href="#beneficios" class="hover:text-rose-600 transition" data-scroll>Planes</a>
+          <a href="#beneficios" class="hover:text-rose-600 transition" data-scroll>Cartilla</a>
+          <a href="#contacto" class="hover:text-rose-600 transition" data-scroll>Centros de atención</a>
+          <a href="#beneficios" class="hover:text-rose-600 transition" data-scroll>Sustentabilidad</a>
+          <a href="#contacto" class="hover:text-rose-600 transition" data-scroll>Dudas</a>
+          <a href="#contacto" class="hover:text-rose-600 transition" data-scroll>Contacto</a>
+          <a 
+            href="#contacto" 
+            class="inline-flex items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white shadow hover:bg-rose-800 focus:outline-none focus:ring-2 focus:ring-rose-500" 
+            data-scroll
+          >
+            Mi cuenta 
+          </a>
+        </div>
+        <button
+          id="menu-toggle"
+          type="button"
+          class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-blue-900 focus:outline-none focus:ring-2 focus:ring-rose-500"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Abrir menú principal</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+          </svg>          
+        </button>
+      </nav>
+      <!-- MENÚ MOBILE -->
+      <div id="mobile-menu" class="md:hidden hidden border-t border-blue-100 bg-white">
+        <div class="max-w-6xl mx-auto px-4 py-3 space-y-2 text-sm font-medium text-blue-900">
+          <a href="#beneficios" class="block py-1 hover:text-rose-600 transition" data-scroll>Planes</a>
+          <a href="#beneficios" class="block py-1 hover:text-rose-600 transition" data-scroll>Cartilla</a>
+          <a href="#centros" class="block py-1 hover:text-rose-600 transition" data-scroll>Centros de atención</a>
+          <a href="#beneficios" class="block py-1 hover:text-rose-600 transition" data-scroll>Sustentabilidad</a>
+          <a href="#contacto" class="block py-1 hover:text-rose-600 transition" data-scroll>Dudas</a>
+          <a href="#contacto" class="block py-1 hover:text-rose-600 transition" data-scroll>Contacto</a>
+          <a
+            href="#contacto"
+            class="mt-2 inline-flex w-full justify-center items-center rounded-lg bg-secondary px-4 py-2 text-sm font-semibold text-white shadow focus:outline-none focus:ring-2 focus:ring-rose-500"
+            data-scroll
+          >
+            Mi cuenta
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->    
+      <section class="relative bg-primary text-white border-b-4 border-tertiary rounded-bl-[32px] rounded-br-[32px] overflow-hidden">
+        <div class="hidden lg:block absolute inset-y-0 right-0 w-[50vw]">
+          <img
+            src="./assets/image_1.webp"
+            alt="Persona feliz con su mascota"
+            class="h-full w-full object-cover object-top"
+          />
+          <div class="absolute inset-0 bg-gradient-to-l from-primary/0 via-primary/20 to-primary/100"></div>
+        </div>
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div class="lg:max-w-[60%]">
+            <h1 class="text-4xl sm:text-5xl font-semibold leading-tight">
+              ¡Descuentología por 1 año!
+            </h1>
+      
+            <p class="font-medium mt-4 text-lg text-white/85">
+              Aprovechá hasta un
+              <span class="font-bold text-cyan-300 ">40% OFF + bonificaciones*</span>
+              en tu plan de salud. Contratás online, con asesoramiento personalizado y cobertura en todo el país.
+            </p>
+            <div class="mt-6 flex flex-col sm:flex-row gap-4">
+              <a
+                href="#contacto"
+                class="inline-flex w-full sm:w-auto items-center justify-center rounded-lg bg-secondary px-5 py-3 text-sm font-semibold text-white shadow hover:bg-rose-800 focus:outline-none focus:ring-2 focus:ring-[#ff4c73]"
+              >
+                Quiero más info
+              </a>
+              <a
+                href="#beneficios"
+                class="inline-flex w-full sm:w-auto items-center justify-center rounded-lg border border-white/70 bg-white px-5 py-3 text-sm font-semibold text-primary shadow-sm hover:bg-white/90 focus:outline-none focus:ring-2 focus:ring-white/70"
+              >
+                Ver beneficios
+              </a>
+            </div>
+            <p class="mt-10 text-xs text-white/70">
+              *Aplican TyC. Promoción válida abonando a través de CBU.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+  <!-- BENEFICIOS -->
+      <section id="beneficios" class="py-16 sm:py-20 lg:py-24 bg-[#eef2ff]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="max-w-3xl">
+            <p class="text-sm font-semibold text-blue-600">Beneficios destacados</p>
+            <h2 class="mt-2 text-3xl font-semibold text-blue-950">Elegí tranquilidad</h2>
+            <p class="mt-3 text-lg text-slate-600">Cobertura amplia, red de prestadores en todo el país y soporte digital cuando lo necesites.</p>
+          </div>
+          <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-[16px] border border-white/60 bg-white px-8 py-6 sm:py-8 transition-shadow duration-300 hover:shadow-[0_12px_30px_-18px_rgba(15,23,42,.35)]" aria-labelledby="benefit-title-1">
+
+              <div class="space-y-4">
+                <span class="inline-flex items-center justify-center rounded-[8px] bg-rose-50 text-[#C70036] p-[22px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z" clip-rule="evenodd" />
+                  </svg>
+                </span>
+                <div class="space-y-2">
+                  <h3 id="benefit-title-1" class="text-lg font-semibold text-slate-950">Médico en línea las 24hs</h3>
+                  <p class="text-gray-500">Consultas virtuales disponibles todos los días, cuando las necesites.</p>
+                </div>
+              </div>
+            </article>
+            <article class="rounded-[16px] border border-white/60 bg-white px-8 py-6 sm:py-8 transition-shadow duration-300 hover:shadow-[0_12px_30px_-18px_rgba(15,23,42,.35)]" aria-labelledby="benefit-title-2">
+
+              <div class="space-y-4">
+                <span class="inline-flex items-center justify-center rounded-[8px] bg-rose-50 text-secondary p-[22px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 0 1-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004ZM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 0 1-.921.42Z" />
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v.816a3.836 3.836 0 0 0-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 0 1-.921-.421l-.879-.66a.75.75 0 0 0-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 0 0 1.5 0v-.81a4.124 4.124 0 0 0 1.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 0 0-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 0 0 .933-1.175l-.415-.33a3.836 3.836 0 0 0-1.719-.755V6Z" clip-rule="evenodd" />
+                  </svg>                  
+                </span>
+                <div class="space-y-2">
+                  <h3 id="benefit-title-2" class="text-lg font-semibold text-slate-950">Descuentos en comercios de todo el país</h3>
+                  <p class="text-gray-500">A través de nuestro Club de Beneficios, ahorrá en rubros clave.</p>
+                </div>
+              </div>
+            </article>
+            <article class="rounded-[16px] border border-white/60 bg-white px-8 py-6 sm:py-8 transition-shadow duration-300 hover:shadow-[0_12px_30px_-18px_rgba(15,23,42,.35)]" aria-labelledby="benefit-title-3">
+              <div class="space-y-4">
+                <span class="inline-flex items-center justify-center rounded-[8px] bg-rose-50 text-secondary p-[22px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" clip-rule="evenodd" />
+                  </svg>                  
+                </span>
+                <div class="space-y-2">
+                  <h3 id="benefit-title-3" class="text-lg font-semibold text-slate-950">Más de 300.000 prestadores en la cartilla</h3>
+                  <p class="text-gray-500">Amplia red para elegir especialistas y centros cercanos.</p>
+                </div>
+              </div>
+            </article>
+            <article class="rounded-[16px] border border-white/60 bg-white px-8 py-6 sm:py-8 transition-shadow duration-300 hover:shadow-[0_12px_30px_-18px_rgba(15,23,42,.35)]" aria-labelledby="benefit-title-4">
+              <div class="space-y-4">
+                <span class="inline-flex items-center justify-center rounded-[8px] bg-rose-50 text-secondary p-[22px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="M9 1.5H5.625c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0 0 16.5 9h-1.875a1.875 1.875 0 0 1-1.875-1.875V5.25A3.75 3.75 0 0 0 9 1.5Zm6.61 10.936a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 14.47a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                    <path d="M12.971 1.816A5.23 5.23 0 0 1 14.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 0 1 3.434 1.279 9.768 9.768 0 0 0-6.963-6.963Z" />
+                  </svg>                  
+                </span>
+                <div class="space-y-2">
+                  <h3 id="benefit-title-4" class="text-lg font-semibold text-slate-950">Recetas digitales en el momento</h3>
+                  <p class="text-gray-500">Recibí tus indicaciones médicas sin esperas ni trámites.</p>
+                </div>
+              </div>
+            </article>
+            <article class="rounded-[16px] border border-white/60 bg-white px-8 py-6 sm:py-8 transition-shadow duration-300 hover:shadow-[0_12px_30px_-18px_rgba(15,23,42,.35)]" aria-labelledby="benefit-title-5">
+              <div class="space-y-4">
+                <span class="inline-flex items-center justify-center rounded-[8px] bg-rose-50 text-secondary p-[22px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="M8.603 3.799A4.49 4.49 0 0 1 12 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 0 1 3.498 1.307 4.491 4.491 0 0 1 1.307 3.497A4.49 4.49 0 0 1 21.75 12a4.49 4.49 0 0 1-1.549 3.397 4.491 4.491 0 0 1-1.307 3.497 4.491 4.491 0 0 1-3.497 1.307A4.49 4.49 0 0 1 12 21.75a4.49 4.49 0 0 1-3.397-1.549 4.49 4.49 0 0 1-3.498-1.306 4.491 4.491 0 0 1-1.307-3.498A4.49 4.49 0 0 1 2.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 0 1 1.307-3.497 4.49 4.49 0 0 1 3.497-1.307Zm7.007 6.387a.75.75 0 1 0-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 0 0-1.06 1.06l2.25 2.25a.75.75 0 0 0 1.14-.094l3.75-5.25Z" clip-rule="evenodd" />
+                  </svg>                  
+                </span>
+                <div class="space-y-2">
+                  <h3 id="benefit-title-5" class="text-lg font-semibold text-slate-950">Óptica Online</h3>
+                  <p class="text-gray-500">Gestioná lentes y accesorios con envíos y seguimiento online.</p>
+                </div>
+              </div>
+            </article>
+            <article class="rounded-[16px] border border-white/60 bg-white px-8 py-6 sm:py-8 transition-shadow duration-300 hover:shadow-[0_12px_30px_-18px_rgba(15,23,42,.35)]" aria-labelledby="benefit-title-6">
+              <div class="space-y-4">
+                <span class="inline-flex items-center justify-center rounded-[8px] bg-rose-50 text-secondary p-[22px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="M2.25 5.25a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3V15a3 3 0 0 1-3 3h-3v.257c0 .597.237 1.17.659 1.591l.621.622a.75.75 0 0 1-.53 1.28h-9a.75.75 0 0 1-.53-1.28l.621-.622a2.25 2.25 0 0 0 .659-1.59V18h-3a3 3 0 0 1-3-3V5.25Zm1.5 0v7.5a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5v-7.5a1.5 1.5 0 0 0-1.5-1.5H5.25a1.5 1.5 0 0 0-1.5 1.5Z" clip-rule="evenodd" />
+                  </svg>                  
+                </span>
+                <div class="space-y-2">
+                  <h3 id="benefit-title-6" class="text-lg font-semibold text-slate-950">Autogestión</h3>
+                  <p class="text-gray-500">Gestioná y consultá tu cuenta de forma rápida y segura.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+  <!-- FORMULARIO -->      
+      <section id="contacto" class="py-16 sm:py-20 lg:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="rounded-[16px] bg-white shadow-card p-6 sm:p-10 ">
+            <div class="grid gap-10 lg:grid-cols-[1fr_1px_1fr]" id="centros">
+              <div>
+                <p class="text-sm font-semibold text-blue-600">¿Te contactamos?</p>
+                <h2 class="mt-2 text-3xl font-semibold text-zinc-900">Completá tus datos y un asesor se comunicará con vos.</h2>
+                <form id="contact-form" class="mt-8 space-y-5" novalidate>
+                  <div>
+                    <label for="name" class="block text-sm font-medium text-slate-950">Nombre y Apellido *</label>
+                    <input id="name" name="name" type="text" required minlength="3" autocomplete="name" class="mt-2 block w-full rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-zinc-900 placeholder-zinc-500 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-500" placeholder="Ej: Juan Pérez" aria-describedby="name-error" />
+                    <p id="name-error" class="mt-1 text-sm text-rose-600 hidden"></p>
+                  </div>
+                  <div>
+                    <label for="email" class="block text-sm font-medium text-slate-950">Email *</label>
+                    <input id="email" name="email" type="email" required inputmode="email" autocomplete="email" class="mt-2 block w-full rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-zinc-900 placeholder-zinc-500 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-500" placeholder="tu@email.com" aria-describedby="email-error" />
+                    <p id="email-error" class="mt-1 text-sm text-rose-600 hidden"></p>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4">
+                  <div>
+                    <label for="area-code" class="block text-sm font-medium text-slate-950">Código de área *</label>
+                    <input id="area-code" name="area-code" type="text" required inputmode="numeric" 
+                      class="mt-2 block w-full rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-zinc-900 placeholder-zinc-500 
+                      focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-500"
+                      placeholder="011" aria-describedby="area-code-error" />
+                    <p id="area-code-error" class="mt-1 text-sm text-rose-600 hidden"></p>
+                  </div>
+                  <div>
+                    <label for="phone" class="block text-sm font-medium text-slate-950">Teléfono *</label>
+                    <input id="phone" name="phone" type="tel" required inputmode="tel" pattern="[0-9+()\s-]*"
+                      class="mt-2 block w-full rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-zinc-900 placeholder-zinc-500 
+                      focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-500"
+                      placeholder="0000-0000" aria-describedby="phone-error" />
+                    <p id="phone-error" class="mt-1 text-sm text-rose-600 hidden"></p>
+                  </div>
+                  
+                </div>
+                <div>
+                  <label for="city" class="block text-sm font-medium text-slate-950">Localidad *</label>
+                  <select id="city" name="city" required 
+                    class="mt-2 block w-full rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-sm text-zinc-900 
+                    focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-500">
+                    <option value="">Seleccionar</option>
+                    <option value="santa-fe">Santa Fé</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="buenos-aires">Buenos Aires</option>
+                  </select>
+                  <p id="city-error" class="mt-1 text-sm text-rose-600 hidden"></p>
+                </div>
+                <div>
+                  <label for="birthdate" class="block text-sm font-medium text-slate-950">Fecha de nacimiento</label>
+                  <input id="birthdate" name="birthdate" type="date" 
+                    class="mt-2 block w-full rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-zinc-900 
+                    focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-500" />
+                  <p id="birthdate-error" class="mt-1 text-sm text-rose-600 hidden"></p>
+                </div>
+                  <div>
+                    <div class="flex items-baseline justify-between">
+                      <label for="message" class="block text-sm font-medium text-slate-950">Mensaje</label>
+                      <span id="message-count" class="text-xs text-zinc-500">0 / 500</span>
+                    </div>
+                    <textarea id="message" name="message" rows="4" maxlength="500" class="mt-2 block w-full rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-zinc-900 placeholder-zinc-500 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-500" placeholder="Hola, quiero asociarme." aria-describedby="message-error"></textarea>
+                    <p id="message-error" class="mt-1 text-sm text-rose-600 hidden"></p>
+                  </div>
+                  <div class="space-y-3 text-sm text-zinc-700">
+                  <label class="inline-flex items-center gap-2">
+                    <input type="checkbox" id="privacy" class="rounded border-zinc-300 text-slate-950 focus:ring-blue-500" />
+                    <span>He leído y acepto la Política de Privacidad*</span>
+                  </label>
+                  <label class="inline-flex items-center gap-2">
+                    <input type="checkbox" id="whatsapp-opt" class="rounded border-zinc-300 text-slate-950 focus:ring-blue-500" />
+                    <span>Quiero que me contacten por WhatsApp</span>
+                  </label>
+                  <p id="privacy-error" class="text-sm text-rose-600 hidden"></p>
+                </div>
+                  <button type="submit" class="w-full rounded-lg bg-secondary px-5 py-3 text-white font-semibold shadow hover:bg-rose-800 focus:outline-none focus:ring-2 focus:ring-rose-500">Enviar</button>
+                </form>
+                <div id="success-banner" class="mt-4 hidden rounded-2xl border border-blue-100 bg-green-50 px-3 py-4 text-sm text-green-900" role="status" aria-live="polite" tabindex="-1">
+                  ¡Gracias! Te contactaremos a la brevedad.
+                </div>
+              </div>
+              <div class="hidden lg:block bg-slate-200 w-px"></div>
+              <div class="space-y-8">
+                <div>
+                  <p class="text-sm font-semibold text-blue-600">Nuestros centros de atención</p>
+                  <h2 class="mt-2 text-3xl font-semibold text-zinc-900">Encontranos en todo el país.</h2>
+                </div>
+                <div class="mt-2"> 
+                  <div>
+                <label for="branch-select" class="text-sm font-medium text-slate-950">Seleccioná tu ciudad</label>
+                <select id="branch-select" class="mt-2 w-full rounded-md border border-zinc-200 bg-zinc-50 px-3 py-2 text-zinc-900 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-500">
+                  <option value="santa-fe">Santa Fé</option>
+                  <option value="cordoba">Córdoba</option>
+                  <option value="buenos-aires">Buenos Aires</option>
+                </select>
+              </div>
+                <div class="mt-6 rounded-3xl border border-zinc-100 bg-zinc-50 overflow-hidden">
+                  <img id="branch-image" src="./assets/location_image_1.jpg" alt="Centro de atención" class="h-60 w-full object-cover" />
+                  <div class="px-6 py-4 space-y-2">
+                    <div class="space-y-1">
+                      <h3 id="branch-title" class="text-xl font-semibold text-slate-950">Sede Central Sunchales</h3>
+                      <p id="branch-address" class="text-sm text-zinc-600">25 de Mayo 201</p>
+                      <p id="branch-schedule" class="text-sm text-zinc-600">Horarios de atención: 9.00 a 17.00</p>
+                    </div>
+                    <a id="branch-link" href="https://www.google.com/maps" target="_blank" rel="noopener" class="block text-sm font-semibold text-primary hover:text-blue-800">Ver en Google Maps</a>
+                  </div>
+                </div>
+              </div>                
+                </div>   
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  <!-- FOOTER --> 
+  <footer class="bg-white border-t border-blue-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid gap-8 lg:grid-cols-3 items-start text-sm text-zinc-600">
+        <div class="space-y-3">
+          <p class="font-semibold text-zinc-900">Sobre nosotros</p>
+          <nav class="flex flex-col gap-1">
+            <a href="#" class="hover:text-blue-600">¿Quiénes somos?</a>
+            <a href="#" class="hover:text-blue-600">Vida y salud</a>
+            <a href="#" class="hover:text-blue-600">Capital humano</a>
+            <a href="#" class="hover:text-blue-600">Medio de pago</a>
+            <a href="#" class="hover:text-blue-600">Cuota social</a>
+            <a href="#" class="hover:text-blue-600">Agente institorio</a>
+          </nav>
+        </div>
+        <div class="space-y-3 lg:text-center">
+          <p class="font-semibold text-zinc-900">Descargá la app</p>
+          <div class="flex gap-3 justify-start lg:justify-center">
+            <button
+              class="flex items-center gap-2 rounded-2xl border border-zinc-200 px-4 py-2 text-xs font-semibold text-zinc-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <span>Google Play</span>
+            </button>
+            <button
+              class="flex items-center gap-2 rounded-2xl border border-zinc-200 px-4 py-2 text-xs font-semibold text-zinc-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            >
+              <span>App Store</span>
+            </button>
+          </div>
+        </div>
+        <div class="space-y-2 lg:text-right">
+          <p class="font-semibold text-zinc-900">Políticas de privacidad</p>
+          <p>info@sancorsalud.com.ar</p>
+        </div>
+      </div>
+      <div class="mt-6 border-t border-blue-100 pt-6 text-xs text-zinc-500 space-y-2">
+        <p>
+          ASOCIACIÓN MUTUAL SANCOR SALUD inscripta en el Registro Nacional de Entidades de Medicina Prepaga...
+        </p>
+        <p>
+          0800-222-SALUD (72583) - www.sssalud.gob.ar - Órgano de Control de Obras Sociales y Entidades de
+          Medicina Prepaga.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- FIXED WHATSAPP -->
+    <a
+      href="https://api.whatsapp.com/send?phone=5493493516640"
+      target="_blank" rel="noopener"
+      aria-label="Contactar por WhatsApp"
+      class="fixed bottom-4 right-4 z-50 inline-flex items-center gap-2 rounded-full bg-green-600 text-white px-4 py-4 shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.59-5.96C.154 5.3 5.455 0 12.076 0c3.17 0 6.153 1.237 8.4 3.484a11.79 11.79 0 0 1 3.49 8.39c-.003 6.62-5.304 11.92-11.926 11.92a11.95 11.95 0 0 1-5.946-1.59L.057 24zm6.597-3.807c1.78.995 3.06 1.591 5.42 1.591 5.448 0 9.886-4.434 9.889-9.877.003-5.462-4.415-9.89-9.881-9.89-5.452 0-9.88 4.43-9.88 9.882 0 2.336.86 4.548 2.3 6.263l-.99 3.617 3.142-.586zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.03-.967-.272-.099-.47-.149-.669.15-.198.297-.768.967-.941 1.166-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.298-.495.099-.198.05-.372-.025-.521-.074-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.718 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      
+    </a>
+
+    <script src="./main.js" defer></script>
+  </body>
+</html>
